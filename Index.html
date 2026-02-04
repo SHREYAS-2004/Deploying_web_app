@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="External.css" rel="stylesheet">
+    <style>
+        button:disabled{
+            background-color: lightgrey;
+            color: darkgrey;
+            cursor: not-allowed;
+        }
+        button:enabled{
+            background-color: lightgreen;
+            color: darkblue;
+            cursor: pointer;
+        }
+      body{
+            background-color: beige;
+        }
+        input{
+            margin: 10px;
+            border-color: blueviolet;
+            border-radius: 2px;
+            color: black;
+            background-color: aqua;
+        }
+        h2{
+            color: rgb(139, 21, 0);
+            text-decoration: underline;
+        }
+        .special {
+            background-color: lightgreen;
+            border-style: solid;
+            
+        }
+        ul li:nth-child(even) {
+            border: 2px solid red;
+        }
+        .special2 {
+            border-color: red;
+            border-width: 2px;
+            background-color: wheat;
+        }
+        .first {
+            background-color: lightcoral;
+            border-style: dotted;
+        }
+        #head1 {
+            border-style: dashed;
+            border-color: magenta;
+        }
+        div p:last-child {
+            border: 2px solid black;
+        }
+        .submit {
+            background-color: lightgreen;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This is the page header !</h1>
+    </header>
+    <nav>
+        <a href="HelloWorld.html" target="_blank">Hello World</a>
+    </nav>
+    <main>
+        <article>
+            <section class="first">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            </section>
+
+            <section class ="special">
+            <input type="text" name="" id="" class="special2">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id=""class="special2">
+            <input type="text" name="" id="">
+            </section>
+
+            <section>
+                <ul>
+                    <li>Car 1</li>
+                    <li>Car 2</li>  
+                    <li>Car 3</li>
+                    <li>Car 4</li>
+
+                </ul>
+            </section>
+            <section>
+                <header>
+                    <h2>Introduction to Semantic Tags !</h2>
+                </header>
+                <div>This is a div tag ! Giving more info about the article</div>
+            </section>
+            <section id="head1" class="first">
+                <header>
+                    <h2>Introduction to Web Programming !</h2>
+                </header>
+                <div>This is another section in the same article ! Giving more info about the article</div>
+            </section>
+            <section>
+                <header>
+                    <h2>Introduction to CSS3 !</h2>
+                </header>
+                <div><p>This is another section in the same article ! Giving more info about the article lorem 50
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p></div>
+            </section>
+            <button type="submit" class="submit">Submit</button>
+            <button disabled>Disabled !</button>
+            <button>Enabled !</button>
+        </article>
+    </main>
+</body>
+</html>
